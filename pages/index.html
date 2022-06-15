@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="header__content">
+					<div class="header__sing-links">
+						<button id="open_modal_login">Войти</button>
+						<button id="open_modal_register">Зарегистрироваться</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="intro">
+				<div class="container">
+					<div class="intro__title">
+						<p>Добро пожаловать в</p>
+						<h1 class="title">Investing portfolios</h1>
+					</div>
+				</div>
+			</section>
+			<section class="section__problems">
+				<div class="container">
+					<div class="problems">
+						<div class="problem calculate">
+							<div class="problem__image">
+								<img src="../assets/images/problems/finance.png" alt="Tired of calculate">
+							</div>
+							<div class="problem__description">
+								<h3 class="calculate__description">Устал высчитывать стоимость активов?</h3>
+							</div>
+						</div><!-- ./problem -->
+						<div class="problem indexes">
+							<div class="problem__image">
+								<img src="../assets/images/problems/indexes.png" alt="Tired of calculate">
+							</div>
+							<div class="problem__description">
+								<h3 class="indexes__description">Приходится открывать кучу вкладок с курсами крипты?</h3>
+							</div>
+						</div><!-- ./problem -->
+						<div class="problem accounts">
+							<div class="problem__image">
+								<img src="../assets/images/problems/calculate.png" alt="Tired of calculate">
+							</div>
+							<div class="problem__description accounts__description">
+								<h3>Вход во множество аккаунтов занимает много времени?</h3>
+							</div>
+						</div><!-- ./problem -->
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="container">
+					<h2 class="advantages__title">Преимущества <span>Investing portfolios</span></h2>
+					<ul class="advantages__list">
+						<li>Никаких денежных вложений</li>
+						<li>Автоматический подсчёт стоимости ваших активов</li>
+						<li>Обновление стоимости активов в реальном времени</li>
+						<li>Подходит как для отслеживания активов, так и для экспериментов</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</div>
+	<div class="modal" id="register_modal">
+		<form class="modal__form">
+			<div class="form__content" id="form_content">
+			</div>			
+			<!-- ./form__content -->
+		</form>
+	</div>
+	<script src="../assets/js/index.js"></script>
+</body>
+</html>

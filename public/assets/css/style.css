@@ -1,0 +1,249 @@
+@import url(nullstyle.css);
+.pad-top-20 {
+	padding: 20px 0 0 0;
+}
+.blur {
+	filter: blur(3px);
+}
+.wrapper {
+	min-height: 100vh;
+	width: 100%;
+	position: absolute;
+}
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 100%;
+}
+
+/* == Header == */
+
+header {
+	width: 100%;
+	height: 70px;
+}
+.header__content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.header__content button {
+	background-color: transparent;
+	color: #303030;
+	text-align: center;
+	padding: 0 5px;
+	font-size: 18px;
+	justify-self: flex-end;
+	transition: all 0.2s linear;
+}
+.header__content button:hover {
+	color:#303030;
+	opacity: .8;
+}
+/* ----------- */
+
+/* == Main  == */
+
+.intro {
+	padding: 40px 0 20px 0;
+}
+.intro__title {
+	width: 100%;
+	text-align: center;
+}
+.intro__title p {
+	color:#303030;
+	font-size: 35px;
+}
+.title {
+	line-height: 2em;
+	color: #303030;
+	font-family: 'Bebas Neue';
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.section__problems {
+	padding: 20px 0 20px 0;
+}
+.problems {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.problem {
+	width: 30%;
+	max-height: 400px;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+}
+.calculate {
+	background-color: rgba(255, 121, 116, .7);
+}
+.indexes {
+	background-color: rgba(124, 118, 187, .6);
+}
+.accounts {
+	background-color: rgba(231, 58, 94, .6);
+}
+.calculate__description {
+	text-shadow: 0 3px 2px rgb(216, 80, 75);
+}
+.indexes__description {
+	text-shadow: 0 3px 2px rgb(113, 107, 173);
+}
+.accounts__description {
+	text-shadow: 0 3px 2px rgb(201, 50, 80);
+}
+.problem__image {
+	width: 100%;
+	height: 270px;
+}
+.problem__image img {
+	width: 100%;
+}
+.problem__description {
+	padding: 10px 5px;
+}
+.problem__description h3 {
+	text-align: center;
+	color: #fdebeb;
+  font-family: 'Russo One';
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 0.08em;
+	/* text-shadow: 0 5px 5px #BD384A; */
+}
+.advantages {
+	padding: 20px 0;
+}
+.advantages__title {
+	color: #303030;
+	font-size: 30px;
+}
+.advantages__list {
+	padding: 15px 0 0 15px;
+}
+.advantages__list li {
+	color: #303030;
+	font-size: 22px;
+	line-height: 1.3em;
+}
+/* -------- */
+
+/* == Modal Form == */
+.modal {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+.modal::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(48, 48, 48, 0.5);
+}
+.modal__form {
+	position: absolute;
+	width: 350px;
+	height: 450px;
+	background: linear-gradient(rgba(255, 121, 116, 0.50), rgba(231, 58, 94, 0.50));
+	z-index: 5;
+	overflow: hidden;
+}
+.form__content {
+	padding: 10px;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 8;
+}
+.form__close {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+.close {
+	height: 100%;
+	width: 20px;
+}
+.close:hover {
+	cursor: pointer;
+}
+.form__title {
+	width: 100%;
+	text-align: center;
+	z-index: 8;
+	padding: 15px 0 0 0 ;
+}
+.form__title>h3{
+	color: #fff;
+	font-size: 22px;
+	z-index: 8;
+}
+.form__register-data{
+	width: 100%;
+	height: 100%;
+}
+.form__register-data div {
+	width: 100%;
+	text-align: center;
+}
+.form__register-data div input {
+	background-color: transparent;
+	border: 2px solid #fff;
+	width: 300px;
+	height: 40px;
+	padding: 10px;
+	color: #fff;
+	font-size: 18px;
+}
+.form__register-data div input:focus {
+	cursor: text;
+}
+.form__register-data div input::placeholder {
+	color: rgb(247, 247, 247);
+	font-size: 16px;
+}
+.input-error {
+	color: #fff;
+	margin-top: 5px;
+	display: none;
+}
+.form__register-data div button {
+	width: 300px;
+	height: 40px;
+	background-color: #52C698;
+	color: #fff;
+	font-size: 20px;
+}
+.form__bottom {
+	padding: 15px 15px 0 15px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: #fff;
+}
+.form__bottom a {
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.8;
+	transition: all 0.3s linear;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.form__bottom a:hover {
+	opacity: 1;
+}

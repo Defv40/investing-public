@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Инвестиционные портфели</title>
+	<link rel="stylesheet" href="../assets/css/portfolio.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="header__content">
+					<div class="header__logo">
+						<p>Investing portfolios</p>
+					</div>
+					<nav class="nav">
+						<div class="dropdown__menu" id="dropdown_menu">
+							<div class="dropdown__logout-button">
+								<button class="logout-button">Выйти</button>
+							</div>
+						</div>
+						<div class="nav__username" id="nav_username">
+							<p class="username" id="username">Прогружаем...</p>
+							<div class="nav__dropdown-button">
+								<img class="dropdown-button" src="../assets/images/svg-icons/dropdown-arrow.svg" alt="dropdown button" id="dropdown_button">
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section__search">
+				<div class="container">
+					<div class="search">
+						<input type="search" name="search_crypto" id="search_input" class="search__input" placeholder="Поиск....">
+						<div class="search__result" id="search_result">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./section__search -->
+			<section class="section__crypto">
+				<div class="container">
+					<div class="portfolio"  id="portfolio">
+						<div class="portfolio__info">
+							<div class="portfolio__sum">
+								<p>Общая стоимость</p>
+								<p class="portfolio__cost" id="portfolio_cost">Прогружаем...</p>
+							</div>
+						</div>
+						<div class="portfolio__content" id="portfolio_content">
+							<div class="preloader">
+								<div class="preloader__row">
+									<div class="preloader__item"></div>
+									<div class="preloader__item"></div>
+									<div class="preloader__item"></div>
+									<div class="preloader__item"></div>
+									<div class="preloader__item"></div>
+									<div class="preloader__item"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- ./section__crypto -->		
+		</main>
+	</div>
+	<div class="modal" id="crypto_modal">
+		<form class="modal__form" id="add_form">
+			<div class="modal__close">
+				<img class="close" id="close_modal" src="../assets/images/svg-icons/cross-white.svg" alt="close">
+			</div>
+			<fieldset class="modal__content">
+				<legend>Добавить в портфель</legend>
+				<div class="modal__crypto-info">
+					<p class="modal__crypto-name"></p>
+					<input type="number" class="modal__crypto-amount" id="cryptocurrency_amount" value="0">
+				</div>
+				<div class="modal__add-button">
+					<button class="add-button" id="add_button">Принять</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="modal" id="update_modal">
+		<form class="modal__form" id="update_form">
+			<div class="modal__close">
+				<img class="close" id="close_updateModal" src="../assets/images/svg-icons/cross-white.svg" alt="close">
+			</div>
+			<fieldset class="modal__content">
+				<legend>Обновить информацию</legend>
+				<div class="modal__crypto-info">
+					<p class="modal__crypto-name" id="updateModal__cryptocurrency-name"></p>
+					<input type="number" class="modal__crypto-amount" id="updateCryptocurrency_amount" value="0">
+				</div>
+				<div class="modal__buttons">
+					<div class="modal__update-button">
+						<button class="add-button" id="update_button">Обновить</button>
+					</div>
+					<div class="modal__remove-button">
+						<button class="add-button" id="remove_button">Удалить</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<!-- ./modal -->
+	<script src="../assets/js/portfolio.js"></script>
+</body>
+</html>
